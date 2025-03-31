@@ -13,9 +13,7 @@
 ## 环境配置
 
 1. 创建并激活Python虚拟环境（推荐）
-
 2. 安装依赖包：
-
    ```bash
    pip install -r requirements.txt
    ```
@@ -23,18 +21,15 @@
 ## 使用说明
 
 1. 准备数据集
-
    - 下载LaSOT数据集
    - 将数据集放置在指定目录
 
 2. 训练模型
-
    ```bash
    python train.py
    ```
 
 3. 评估模型
-
    ```bash
    python evaluate.py
    ```
