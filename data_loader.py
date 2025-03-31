@@ -95,7 +95,7 @@ class LaSOTDataset(Dataset):
             'search_bbox': torch.tensor(sample['search_bbox'])
         }
 
-def get_lasot_dataloader(root_dir, batch_size=32, num_workers=4, split='train'):
+def get_lasot_dataloader(root_dir, batch_size=32, num_workers=2, split='train'):
     dataset = LaSOTDataset(root_dir=root_dir, split=split)
     dataloader = DataLoader(
         dataset,
